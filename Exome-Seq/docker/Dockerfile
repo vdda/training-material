@@ -1,6 +1,6 @@
 # Galaxy - Exome sequencing training material
 
-FROM bgruening/galaxy-stable:16.04
+FROM bgruening/galaxy-exom-seq
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
