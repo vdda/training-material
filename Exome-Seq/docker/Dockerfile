@@ -15,9 +15,6 @@ ENV GALAXY_CONFIG_CONDA_AUTO_INSTALL=True \
 ADD setup_data_libraries.py $GALAXY_ROOT/setup_data_libraries.py
 ADD library_data.yaml $GALAXY_ROOT/library_data.yaml
 
-ADD startup_lite.sh /usr/bin/startup_lite
-RUN chmod +x /usr/bin/startup_lite
-
 # Download training data and populate the data library
 RUN startup_lite && \
     sleep 30 && \
